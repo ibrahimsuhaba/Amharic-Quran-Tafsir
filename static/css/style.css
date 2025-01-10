@@ -43,3 +43,31 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Table Styling */
+#tafsirTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tafsirTable th, #tafsirTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#tafsirTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tafsirTable th {
+    background-color: #005f73;
+    color: #fff;
+}
+
+#tafsirTable td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Table Hover Effect */
+#tafsirTable tr:hover {
+    background-color: #eaeaea;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayah in Surah {{ surah_id }}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ayah in Surah {{ surah_id }}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/surah/{{ surah_id }}">Back to Surah</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Ayah List</h2>
+        <ul>
+            {% for ayah in ayah_data %}
+                <li><a href="/ayah/{{ ayah[0] }}">Ayah {{ ayah[2] }}: {{ ayah[3] }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>

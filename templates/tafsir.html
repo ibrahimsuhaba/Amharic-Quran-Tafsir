@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafsir for Ayah {{ ayah_id }}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tafsir for Ayah {{ ayah_id }}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/ayah/{{ ayah_id }}">Back to Ayah</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Tafsir Text</h2>
+        <p>{{ tafsir_data[0][2] }}</p>
+        <p><strong>Author:</strong> {{ tafsir_data[0][3] }}</p>
+    </section>
+</body>
+</html>

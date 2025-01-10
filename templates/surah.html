@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah in Juz {{ juz_id }}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Surah in Juz {{ juz_id }}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/juz/{{ juz_id }}">Back to Juz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Surah List</h2>
+        <ul>
+            {% for surah in surah_data %}
+                <li><a href="/surah/{{ surah[0] }}">{{ surah[1] }} - {{ surah[2] }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>
